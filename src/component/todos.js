@@ -62,7 +62,7 @@ class todos extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                {(todos.filter(data => data.status === 1)).sort(function(a,b){ return b.createdAt - a.createdAt }).map(u =>
+                                {(todos.filter(data => data.status === 1)).sort(function(a,b){ return a.createdAt - b.createdAt }).map(u =>
                                     <tr>
                                         <React.Fragment key={u.id}>
                                             <td>{u.title} </td>
